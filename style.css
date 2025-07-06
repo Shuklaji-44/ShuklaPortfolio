@@ -1,3 +1,9 @@
+/* Theme Colors */
+:root {
+  --accent-color: #F48FB1;
+  --accent-light: #F8BBD0;
+}
+
 /* General Reset */
 * {
   margin: 0;
@@ -13,13 +19,13 @@ body {
 }
 
 a {
-  color: #4CAF50;
+  color: var(--accent-color);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #388E3C;
+  color: #d16b94;
 }
 
 /* Navigation - Desktop */
@@ -36,7 +42,7 @@ a:hover {
 }
 
 #desktop-nav .logo {
-  color: #4CAF50;
+  color: var(--accent-color);
   font-weight: bold;
   font-size: 1.6rem;
   cursor: pointer;
@@ -57,7 +63,7 @@ a:hover {
 }
 
 .nav-links li a:hover {
-  background-color: #4CAF50;
+  background-color: var(--accent-color);
   color: white;
 }
 
@@ -75,7 +81,7 @@ a:hover {
 }
 
 #hamburger-nav .logo {
-  color: #4CAF50;
+  color: var(--accent-color);
   font-weight: bold;
   font-size: 1.6rem;
   cursor: pointer;
@@ -129,7 +135,7 @@ a:hover {
 }
 
 .menu-links ul li a:hover {
-  background-color: #4CAF50;
+  background-color: var(--accent-color);
   color: white;
 }
 
@@ -138,8 +144,8 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 40px;
-  padding: 120px 60px 80px; /* top padding to account for fixed nav */
-  background: linear-gradient(135deg, #4CAF50, #81C784);
+  padding: 120px 60px 80px;
+  background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
   color: white;
   min-height: 70vh;
 }
@@ -189,7 +195,7 @@ a:hover {
 
 .btn-color-1 {
   background-color: white;
-  color: #4CAF50;
+  color: var(--accent-color);
 }
 
 .btn-color-1:hover {
@@ -204,7 +210,7 @@ a:hover {
 
 .btn-color-2:hover {
   background-color: white;
-  color: #4CAF50;
+  color: var(--accent-color);
 }
 
 #socials-container {
@@ -273,7 +279,7 @@ a:hover {
 .details-container h3 {
   margin-top: 12px;
   margin-bottom: 8px;
-  color: #4CAF50;
+  color: var(--accent-color);
 }
 
 .details-container p {
@@ -320,7 +326,7 @@ a:hover {
   font-weight: 700;
   font-size: 1.8rem;
   margin-bottom: 20px;
-  color: #4CAF50;
+  color: var(--accent-color);
 }
 
 .article-container {
@@ -342,7 +348,7 @@ article {
 }
 
 article:hover {
-  background-color: #e6f2e6;
+  background-color: #fce4ec;
 }
 
 article .icon {
@@ -394,7 +400,7 @@ article p {
 .project-title {
   margin-bottom: 15px;
   font-weight: 700;
-  color: #4CAF50;
+  color: var(--accent-color);
 }
 
 .project-btn {
@@ -460,7 +466,7 @@ footer .nav-links li a {
 }
 
 footer .nav-links li a:hover {
-  color: #4CAF50;
+  color: var(--accent-color);
 }
 
 /* Responsive Media Queries */
