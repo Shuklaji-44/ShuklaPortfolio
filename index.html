@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -266,14 +265,14 @@
           </div>
         </div>
 
-        <!-- Project 3 -->
+        <!-- Project 3: YouTube Clone -->
         <div class="details-container color-container">
           <div class="article-container">
-            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+            <img src="./assets/project-youtube.jpg" alt="YouTube Clone" class="project-img" />
           </div>
-          <h2 class="experience-sub-title project-title">Data Visualizer</h2>
+          <h2 class="experience-sub-title project-title">YouTube Clone</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Shuklaji-44/data-visualizer'">GitHub</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Shuklaji-44/youtube-clone'">GitHub</button>
             <button class="btn btn-color-2 project-btn" onclick="location.href='https://your-live-demo-link.com'">Live Demo</button>
           </div>
         </div>
@@ -284,68 +283,49 @@
 
   <!-- Contact Section -->
   <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img src="./assets/email.png" alt="Email" class="icon contact-icon email-icon" />
-        <p><a href="mailto:shuklagauravakela@gmail.com">shuklagauravakela@gmail.com</a></p>
+    <p class="section__text__p1">Get In Touch</p>
+    <h1 class="title">Contact Info</h1>
+    <div class="contact-container">
+      <div class="contact-info">
+        <p><strong>Email:</strong> shuklagaurev44@gmail.com</p>
+        <p><strong>Phone:</strong> +91 7017072429</p>
+        <p><strong>Location:</strong> India</p>
       </div>
-      <div class="contact-info-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn" class="icon contact-icon" />
-        <p><a href="https://www.linkedin.com/in/shukla-gaurav-57895a2ab" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/github.png" alt="GitHub" class="icon contact-icon" />
-        <p><a href="https://github.com/Shuklaji-44" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-      </div>
+      <form id="contact-form" action="mailto:shuklagaurev44@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required/>
+        <input type="email" name="email" placeholder="Your Email" required/>
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn-color-1">Send Message</button>
+      </form>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <nav>
-      <div class="nav-links-container">
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <p>&copy; 2025 Shukla Gaurav. All Rights Reserved.</p>
+    <p>&copy; 2025 Shukla Gaurav. All rights reserved.</p>
   </footer>
 
   <script>
-    // Hamburger menu toggle function (you may already have this in your script.js)
+    // Toggle hamburger menu
     function toggleMenu() {
-      const menuLinks = document.querySelector("#hamburger-nav .menu-links");
-      menuLinks.classList.toggle("active");
+      const menuLinks = document.querySelector('.menu-links');
+      menuLinks.classList.toggle('active');
     }
 
-    // Dynamic title cycling
+    // Dynamic title text cycling
     const titles = [
-      "Web Development & Data Science",
-      "Full-Stack Developer",
-      "Data Enthusiast",
-      "Aspiring Software Engineer",
-      "Tech Problem Solver",
-      "JavaScript & Python Lover"
+      'Web Development & Data Science',
+      'Full Stack Developer',
+      'Data Science Enthusiast',
+      'Open Source Contributor',
+      'Tech Learner & Innovator'
     ];
+    let titleIndex = 0;
+    const dynamicTitle = document.getElementById('dynamic-title');
 
-    let currentIndex = 0;
-    const titleElement = document.getElementById("dynamic-title");
-
-    function changeTitle() {
-      currentIndex = (currentIndex + 1) % titles.length;
-      titleElement.textContent = titles[currentIndex];
-    }
-
-    // Change title every 3 seconds
-    setInterval(changeTitle, 3000);
+    setInterval(() => {
+      titleIndex = (titleIndex + 1) % titles.length;
+      dynamicTitle.textContent = titles[titleIndex];
+    }, 4000);
   </script>
-  <script src="script.js"></script>
 </body>
 </html>
