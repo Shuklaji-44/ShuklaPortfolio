@@ -1,3 +1,4 @@
+
 /* General Reset */
 * {
   margin: 0;
@@ -363,19 +364,153 @@ article p {
   font-size: 0.9rem;
 }
 
-/* 🆕 Projects Section - Dark Mode */
+/* Projects Section */
 #projects {
   padding: 80px 40px 40px;
   max-width: 1100px;
   margin: 0 auto;
-  color: #e0e0e0;
-  background-color: #121212;
+  color: #333;
   text-align: center;
 }
 
 .color-container {
-  background: #1e1e1e;
+  background: #f9f9f9;
   border-radius: 15px;
   padding: 20px;
   margin-bottom: 40px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.color-container:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.project-title {
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #9C27B0;
+}
+
+.project-btn {
+  margin: 0 8px;
+}
+
+/* Contact Section */
+#contact {
+  padding: 80px 40px 40px;
+  background-color: #222;
+  color: white;
+  text-align: center;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-icon {
+  width: 32px;
+  filter: invert(1);
+}
+
+.contact-info-container a {
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.contact-info-container a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: #888;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.9rem;
+  margin-top: 50px;
+}
+
+footer .nav-links {
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+footer .nav-links li a {
+  color: #888;
+  font-weight: 500;
+  padding: 5px 15px;
+}
+
+footer .nav-links li a:hover {
+  color: #9C27B0;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 900px) {
+  #profile {
+    flex-direction: column;
+    padding: 100px 20px 80px;
+  }
+
+  #about .section-container {
+    flex-direction: column;
+  }
+
+  .about-containers {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
+  .features-container {
+    flex-direction: column;
+  }
+
+  .feature-item {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .article-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .section__text__p1 {
+    font-size: 1rem;
+  }
+  .title {
+    font-size: 2.4rem;
+  }
+  .section__text__p2 {
+    font-size: 1.2rem;
+  }
+}
