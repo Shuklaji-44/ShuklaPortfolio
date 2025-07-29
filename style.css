@@ -364,41 +364,61 @@ article p {
 }
 
 /* Projects Section */
+/* Updated Dark Theme for Project Section */
 #projects {
   padding: 80px 40px 40px;
   max-width: 1100px;
   margin: 0 auto;
-  color: #333;
+  color: #e0e0e0;
+  background-color: #121212;
   text-align: center;
 }
 
 .color-container {
-  background: #f9f9f9;
+  background: #1e1e1e;
   border-radius: 15px;
   padding: 20px;
   margin-bottom: 40px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
-  transition: box-shadow 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .color-container:hover {
-  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
+}
+
+.project-title {
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #bb86fc;
 }
 
 .project-img {
   width: 100%;
   border-radius: 15px;
   margin-bottom: 15px;
+  border: 2px solid #333;
 }
 
-.project-title {
-  margin-bottom: 15px;
-  font-weight: 700;
-  color: #9C27B0;
-}
-
+/* GitHub and Live Demo Buttons in Dark Theme */
 .project-btn {
+  display: inline-block;
+  background-color: #1f1f1f;
+  color: #bb86fc;
+  border: 1px solid #bb86fc;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
   margin: 0 8px;
+  transition: background 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.project-btn:hover {
+  background-color: #bb86fc;
+  color: #121212;
 }
 
 /* Contact Section */
